@@ -6,11 +6,14 @@ function Products(){
     return <>
     <section className="card-container">
         <section className="card">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.com.br%2Fsearch%3Fkeyword%3Dcamisa%2520do%2520brasil&psig=AOvVaw1Yz_ksm8fKToXMnyVZv83_&ust=1692983991401000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIiumtPm9YADFQAAAAAdAAAAABAE" alt="img-camisa" />
+            <img className="card-img" src="https://down-br.img.susercontent.com/file/sg-11134201-7qvcv-lf0yt1m9p6zy32_tn" alt="img-camisa" />
             <div className="card-details">
                 <h3 className="card-title">Camisa</h3>
                 <section className="card-reviews">
-                    <AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/>
+                    <AiFillStar className="rating-star"/> 
+                    <AiFillStar className="rating-star"/> 
+                    <AiFillStar className="rating-star"/> 
+                    <AiFillStar className="rating-star"/>
                     <span className="total-reviews">4</span>
                 </section>
                 <section className="card=price">
@@ -18,7 +21,7 @@ function Products(){
                         <del>R$ 300</del> 200
                     </div>
                     <div className="bag">
-                        <BsFillBagHeartFill/>
+                        <BsFillBagHeartFill className="bag-icon"/>
                     </div>
                 </section>
             </div>
