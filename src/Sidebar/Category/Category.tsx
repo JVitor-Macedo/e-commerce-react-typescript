@@ -1,3 +1,4 @@
+import Input from "../../Components/input"
 import "./Category.css"
 
 function Category(){
@@ -5,26 +6,10 @@ function Category(){
         <h2 className="sidebar-title">Category</h2>
 
         <div>
-            <label className="sidebar-label-container">
-                <input type="radio" name="test" />
-                <span className="checkmark"></span>Todos
-            </label>
-            <label className="sidebar-label-container">
-                <input type="radio" name="test" />
-                <span className="checkmark"></span>Camisas
-            </label>
-            <label className="sidebar-label-container">
-                <input type="radio" name="test" />
-                <span className="checkmark"></span>Shorts
-            </label>
-            <label className="sidebar-label-container">
-                <input type="radio" name="test" />
-                <span className="checkmark"></span>Moletom
-            </label>
-            <label className="sidebar-label-container">
-                <input type="radio" name="test" />
-                <span className="checkmark"></span>Calças
-            </label>
+          <Input/>
+          <Input/>
+          <Input/>
+          <Input/>
         </div>
     </div>
 }

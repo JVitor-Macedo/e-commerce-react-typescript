@@ -1,4 +1,4 @@
-const data = [
+const Data = [
     {
         img:"img.png",
         title: "Camisa",
@@ -117,3 +117,5 @@ const data = [
         category: "Teste"
     },
 ]
+
+export default Data
