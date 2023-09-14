@@ -1,10 +1,9 @@
-import { useState } from "react"
+import { SetStateAction, useState } from "react"
 import Navigation from "./Navigation/Nav"
 import Products from "./Products/Products"
 import Recommended from "./Recommended/Recommended"
 import Sidebar from "./Sidebar/sidebar"
 import "./index.css"
-import Category from "./Sidebar/Category/Category"
 import Data from "./db/dataBase"
 import Card from "./Components/card"
 
@@ -17,22 +16,22 @@ function App() {
    //input Filter
    const [query, setQuery] = useState("")
 
-   const handleInputChange = (event:any) => {
+   const handleInputChange = (event: { target: { value: SetStateAction<string> } }) => {
       setQuery(event.target.value)
    }
 
    const filterItens = Data.filter(product => product.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()))
 
-   const handleChange = (event:any) => {
+   const handleChange = (event: { target: { value: SetStateAction<null> } }) => {
       setSelectedCategory(event.target.value)
    }
 
    
-   const handleClick = (event:any) => {
+   const handleClick = (event: { target: { value: SetStateAction<null> } }) => {
       setSelectedCategory(event.target.value)
    }
 
-   const filterData = (products:any, selected:any, query:any) => {
+   const filterData = (products, selected, query) => {
       let filteredProducts = Data
 
       if(query){
