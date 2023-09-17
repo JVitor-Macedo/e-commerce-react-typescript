@@ -1,4 +1,5 @@
 .card-container {
+  background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     margin-left: 20rem;
@@ -7,16 +8,24 @@
   }
   
   .card {
+    width: 250px;;
     margin: 20px;
-    border: 2px solid #ededed;
+    border: 2px solid #797979;
+    border-radius: 10px;
     padding: 20px;
     cursor: pointer;
   }
+
+  .card:hover {
+    border: 3px solid #000000;
+    border-radius: 30px;
+  }
   
   .card-img {
-    width: 13rem;
+    width: 10rem;
     margin-bottom: 1rem;
   }
+
   
   .card-title {
     margin-bottom: 1rem;
